@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I LOVEDD PDF - Ultimate Online PDF, Image & Text Tools</title>
+    <meta name="description" content="Free online PDF tools to merge, compress, convert, edit and more. Plus image tools, text utilities, SEO tools, calculators and social media tools or Free online tools for text processing, development, unit conversion, security">
+    <meta name="keywords" content="i love pdf,PDF tools, merge PDF, compress PDF, JPG to PDF, PDF to JPG, word counter, SEO tools, image converter, youtube tools,facebook tools,instragram tools,tiktok tools,online text tools, developer tools, unit converters, security tools, encryption, online tools,Adobe Acrobat,PDFelement,PDF Expert,Wondershare PDFelement,EaseUS PDF Editor,Foxit PDF Editor,Drawboard,Sejda,CloudConvert,UltraFinder">">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --accent: #4895ef;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #4cc9f0;
+            --danger: #f72585;
+            --warning: #f8961e;
+            --info: #560bad;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: var(--dark);
+        }
+        
+        .navbar-brand {
+            font-weight: 800;
+            font-size: 1.8rem;
+            background: linear-gradient(45deg, #f72585, #4361ee);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #4361ee, #3a0ca3);
+            color: white;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tool-card {
+            transition: all 0.3s ease;
+            border-radius: 12px;
+            overflow: hidden;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tool-card .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .category-title {
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .category-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--danger));
+            border-radius: 2px;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            border-color: var(--secondary);
+        }
+        
+        .footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 15px;
+            transition: transform 0.3s;
+        }
+        
+        .social-icons a:hover {
+            transform: translateY(-3px);
+        }
+        
+        .ad-space {
+            background-color: #f8f9fa;
+            border: 1px dashed #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        /* Tool category colors */
+        .pdf-tools { border-top: 4px solid #f72585; }
+        .image-text-tools { border-top: 4px solid #4895ef; }
+        .text-tools { border-top: 4px solid #4cc9f0; }
+        .seo-tools { border-top: 4px solid #560bad; }
+        .math-tools { border-top: 4px solid #f8961e; }
+        .social-tools { border-top: 4px solid #3a0ca3; }
+        
+        .search-box {
+            position: relative;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .search-box input {
+            padding-left: 40px;
+            border-radius: 50px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        
+        .search-box input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .search-box .search-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+            
+            .navbar-brand {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">I LOVEDD PDF</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pdf-tools">PDF Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#image-tools">Image Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#text-tools">Text Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seo-tools">SEO Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#math-tools">Calculators</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#social-tools">Social Media</a>
+                    </li>
+                </ul>
+                <div class="ms-3">
+                    <a href="#" class="btn btn-primary btn-sm">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5">
+        <div class="container text-center py-4">
+            <h1 class="display-4 fw-bold mb-3">All Your File Tools in One Place</h1>
+            <p class="lead mb-4">Convert, edit, compress and transform your files with our free online tools</p>
+            
+            <div class="search-box mb-4">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="form-control" placeholder="Search for tools...">
+            </div>
+            
+            <div class="d-flex justify-content-center flex-wrap gap-2">
+                <a href="#pdf-tools" class="btn btn-light btn-sm rounded-pill px-3">PDF Tools</a>
+                <a href="#image-tools" class="btn btn-light btn-sm rounded-pill px-3">Image Tools</a>
+                <a href="#text-tools" class="btn btn-light btn-sm rounded-pill px-3">Text Tools</a>
+                <a href="#seo-tools" class="btn btn-light btn-sm rounded-pill px-3">SEO Tools</a>
+                <a href="#math-tools" class="btn btn-light btn-sm rounded-pill px-3">Calculators</a>
+                <a href="#social-tools" class="btn btn-light btn-sm rounded-pill px-3">Social Media</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Space -->
+    <div class="container mt-4">
+        <div class="ad-space">
+            <p class="mb-0">Advertisement</p>
+            <!-- Ad code would go here -->
+        </div>
+    </div>
+
+    <!-- PDF Tools Section -->
+    <section id="pdf-tools" class="py-5">
+        <div class="container">
+            <h2 class="category-title">PDF Tools</h2>
+            <div class="row g-4">
+                <!-- PDF Tool Cards -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card pdf-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-danger">
+                                <i class="fas fa-object-group"></i>
+                            </div>
+                            <h5 class="card-title">Merge PDF</h5>
+                            <p class="card-text text-muted">Combine multiple PDF files into one document</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card pdf-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-danger">
+                                <i class="fas fa-compress-alt"></i>
+                            </div>
+                            <h5 class="card-title">Compress PDF</h5>
+                            <p class="card-text text-muted">Reduce PDF file size while preserving quality</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card pdf-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-danger">
+                                <i class="far fa-file-image"></i>
+                            </div>
+                            <h5 class="card-title">JPG to PDF</h5>
+                            <p class="card-text text-muted">Convert images to PDF documents</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card pdf-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-danger">
+                                <i class="fas fa-file-export"></i>
+                            </div>
+                            <h5 class="card-title">PDF to JPG</h5>
+                            <p class="card-text text-muted">Extract images from PDF files</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card pdf-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-danger">
+                                <i class="fas fa-cut"></i>
+                            </div>
+                            <h5 class="card-title">Split PDF</h5>
+                            <p class="card-text text-muted">Divide a PDF into multiple files</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card pdf-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-danger">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h5 class="card-title">Repair PDF</h5>
+                            <p class="card-text text-muted">Fix corrupted or damaged PDF files</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- More PDF Tools -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card pdf-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-danger">
+                                <i class="far fa-file-word"></i>
+                            </div>
+                            <h5 class="card-title">WORD to PDF</h5>
+                            <p class="card-text text-muted">Convert DOC/DOCX files to PDF</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card pdf-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-danger">
+                                <i class="fas fa-file-word"></i>
+                            </div>
+                            <h5 class="card-title">PDF to WORD</h5>
+                            <p class="card-text text-muted">Convert PDF files to editable Word documents</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card pdf-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-danger">
+                                <i class="fas fa-text-height"></i>
+                            </div>
+                            <h5 class="card-title">OCR PDF</h5>
+                            <p class="card-text text-muted">Extract text from scanned PDFs</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional PDF Tools -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card pdf-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-danger">
+                                <i class="far fa-file-powerpoint"></i>
+                            </div>
+                            <h5 class="card-title">PDF to POWERPOINT</h5>
+                            <p class="card-text text-muted">Convert PDF to editable PPT slides</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card pdf-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-danger">
+                                <i class="fas fa-file-excel"></i>
+                            </div>
+                            <h5 class="card-title">EXCEL to PDF</h5>
+                            <p class="card-text text-muted">Convert spreadsheets to PDF format</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card pdf-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-danger">
+                                <i class="fas fa-file-export"></i>
+                            </div>
+                            <h5 class="card-title">PDF to EXCEL</h5>
+                            <p class="card-text text-muted">Convert PDF tables to Excel sheets</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- More PDF Tools -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card pdf-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-danger">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h5 class="card-title">PDF Security</h5>
+                            <p class="card-text text-muted">Add passwords and permissions</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card pdf-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-danger">
+                                <i class="fas fa-unlock"></i>
+                            </div>
+                            <h5 class="card-title">Unlock PDF</h5>
+                            <p class="card-text text-muted">Remove password protection</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card pdf-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-danger">
+                                <i class="fas fa-rotate-right"></i>
+                            </div>
+                            <h5 class="card-title">Rotate PDF</h5>
+                            <p class="card-text text-muted">Change page orientation</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Final PDF Tools -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card pdf-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-danger">
+                                <i class="fas fa-stamp"></i>
+                            </div>
+                            <h5 class="card-title">Add Watermark</h5>
+                            <p class="card-text text-muted">Stamp your PDF with text or image</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card pdf-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-danger">
+                                <i class="fas fa-edit"></i>
+                            </div>
+                            <h5 class="card-title">Edit PDF</h5>
+                            <p class="card-text text-muted">Modify text and images in PDF</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card pdf-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-danger">
+                                <i class="fas fa-signature"></i>
+                            </div>
+                            <h5 class="card-title">Sign PDF</h5>
+                            <p class="card-text text-muted">Add digital signatures to documents</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Space -->
+    <div class="container">
+        <div class="ad-space">
+            <p class="mb-0">Advertisement</p>
+            <!-- Ad code would go here -->
+        </div>
+    </div>
+
+    <!-- Image & Text Tools Section -->
+    <section id="image-tools" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="category-title">Image & Text Tools</h2>
+            <div class="row g-4">
+                <!-- Image Tool Cards -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card image-text-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-primary">
+                                <i class="fas fa-font"></i>
+                            </div>
+                            <h5 class="card-title">Text to Image</h5>
+                            <p class="card-text text-muted">Convert text into shareable images</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card image-text-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-primary">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                            <h5 class="card-title">Convert to 4K</h5>
+                            <p class="card-text text-muted">Enhance image resolution to 4K</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card image-text-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-primary">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <h5 class="card-title">Sharp Image</h5>
+                            <p class="card-text text-muted">Improve image clarity and sharpness</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card image-text-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-primary">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h5 class="card-title">Image Tools</h5>
+                            <p class="card-text text-muted">Various image editing utilities</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card image-text-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-primary">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <h5 class="card-title">Image Generator</h5>
+                            <p class="card-text text-muted">Create custom images from scratch</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card image-text-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-primary">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h5 class="card-title">Video to Image</h5>
+                            <p class="card-text text-muted">Extract frames from videos</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card image-text-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-primary">
+                                <i class="fas fa-text-width"></i>
+                            </div>
+                            <h5 class="card-title">Image to Text</h5>
+                            <p class="card-text text-muted">Extract text from images (OCR)</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Text Tools Section -->
+    <section id="text-tools" class="py-5">
+        <div class="container">
+            <h2 class="category-title">Text Tools</h2>
+            <div class="row g-4">
+                <!-- Text Tool Cards -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card text-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-info">
+                                <i class="fas fa-font"></i>
+                            </div>
+                            <h5 class="card-title">Word Counter</h5>
+                            <p class="card-text text-muted">Count words, characters, and sentences</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card text-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-info">
+                                <i class="fas fa-text-width"></i>
+                            </div>
+                            <h5 class="card-title">Character Counter</h5>
+                            <p class="card-text text-muted">Count characters with/without spaces</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card text-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-info">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <h5 class="card-title">Case Converter</h5>
+                            <p class="card-text text-muted">Change text case (upper, lower, etc.)</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card text-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-info">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h5 class="card-title">Plagiarism Checker</h5>
+                            <p class="card-text text-muted">Check for duplicate content</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card text-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-info">
+                                <i class="fas fa-spell-check"></i>
+                            </div>
+                            <h5 class="card-title">Grammar Checker</h5>
+                            <p class="card-text text-muted">Fix grammar and spelling mistakes</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card text-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-info">
+                                <i class="fas fa-comment-dots"></i>
+                            </div>
+                            <h5 class="card-title">Text to Speech</h5>
+                            <p class="card-text text-muted">Convert written text to spoken words</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card text-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-info">
+                                <i class="fas fa-microphone"></i>
+                            </div>
+                            <h5 class="card-title">Speech to Text</h5>
+                            <p class="card-text text-muted">Transcribe audio to written text</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card text-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-info">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            <h5 class="card-title">URL Encoder/Decoder</h5>
+                            <p class="card-text text-muted">Encode or decode URLs</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card text-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-info">
+                                <i class="fas fa-text-height"></i>
+                            </div>
+                            <h5 class="card-title">Fancy Text Generator</h5>
+                            <p class="card-text text-muted">Create stylish text for social media</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card text-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-info">
+                                <i class="fas fa-random"></i>
+                            </div>
+                            <h5 class="card-title">Random Text Generator</h5>
+                            <p class="card-text text-muted">Generate placeholder text</p>
+                            <a href="#" class="btn btn-outline-info btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="ad-space">
+            Advertisement Space - Skyscraper (160x600)
+        </div>
+        
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-code"></i>
+                <h2>Developer Tools</h2>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-brackets-curly"></i></div>
+                    <div class="tool-info">
+                        <h3>JSON Formatter</h3>
+                        <p>Format and validate JSON</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fab fa-html5"></i></div>
+                    <div class="tool-info">
+                        <h3>HTML to Markdown Converter</h3>
+                        <p>Convert HTML to Markdown</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fab fa-css3-alt"></i></div>
+                    <div class="tool-info">
+                        <h3>CSS Minifier</h3>
+                        <p>Minify CSS code</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fab fa-js"></i></div>
+                    <div class="tool-info">
+                        <h3>JavaScript Minifier</h3>
+                        <p>Minify JavaScript code</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-database"></i></div>
+                    <div class="tool-info">
+                        <h3>SQL Formatter</h3>
+                        <p>Format SQL queries</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-directions"></i></div>
+                    <div class="tool-info">
+                        <h3>HTACCESS Redirect Generator</h3>
+                        <p>Create redirect rules</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fab fa-markdown"></i></div>
+                    <div class="tool-info">
+                        <h3>Markdown to HTML Converter</h3>
+                        <p>Convert Markdown to HTML</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-palette"></i></div>
+                    <div class="tool-info">
+                        <h3>Color Code Picker</h3>
+                        <p>Pick and convert color codes</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-lock"></i></div>
+                    <div class="tool-info">
+                        <h3>Base64 Encoder/Decoder</h3>
+                        <p>Encode/decode Base64</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-network-wired"></i></div>
+                    <div class="tool-info">
+                        <h3>IP Address Lookup</h3>
+                        <p>Detailed IP information</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ad-space">
+            Advertisement Space - Footer (728x90)
+        </div>
+    </div>
+
+<div class="ad-space">
+            Advertisement Space - Rectangle (300x250)
+        </div>
+        
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-lock"></i>
+                <h2>Security & Encryption Tools</h2>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-hashtag"></i></div>
+                    <div class="tool-info">
+                        <h3>MD5 Hash Generator</h3>
+                        <p>Generate MD5 hashes</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-key"></i></div>
+                    <div class="tool-info">
+                        <h3>SHA256 Hash Generator</h3>
+                        <p>Generate SHA256 hashes</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-unlock-alt"></i></div>
+                    <div class="tool-info">
+                        <h3>Password Generator</h3>
+                        <p>Create strong passwords</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-random"></i></div>
+                    <div class="tool-info">
+                        <h3>Random String Generator</h3>
+                        <p>Generate random strings</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-link"></i></div>
+                    <div class="tool-info">
+                        <h3>URL Shortener</h3>
+                        <p>Shorten long URLs</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-map-marked-alt"></i></div>
+                    <div class="tool-info">
+                        <h3>IP Geolocation Finder</h3>
+                        <p>Locate IP addresses</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-certificate"></i></div>
+                    <div class="tool-info">
+                        <h3>SSL Certificate Checker</h3>
+                        <p>Verify SSL certificates</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-search"></i></div>
+                    <div class="tool-info">
+                        <h3>Whois Lookup</h3>
+                        <p>Domain registration info</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-server"></i></div>
+                    <div class="tool-info">
+                        <h3>HTTP Headers Checker</h3>
+                        <p>Analyze HTTP headers</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-file-contract"></i></div>
+                    <div class="tool-info">
+                        <h3>Privacy Policy Generator</h3>
+                        <p>Create privacy policies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Ad Space -->
+    <div class="container">
+        <div class="ad-space">
+            <p class="mb-0">Advertisement</p>
+            <!-- Ad code would go here -->
+        </div>
+    </div>
+
+    <!-- SEO Tools Section -->
+    <section id="seo-tools" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="category-title">SEO Tools</h2>
+            <div class="row g-4">
+                <!-- SEO Tool Cards -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card seo-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-purple">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                            <h5 class="card-title">Meta Tag Generator</h5>
+                            <p class="card-text text-muted">Create optimized meta tags</p>
+                            <a href="#" class="btn btn-outline-purple btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card seo-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-purple">
+                                <i class="fas fa-key"></i>
+                            </div>
+                            <h5 class="card-title">Keyword Density Checker</h5>
+                            <p class="card-text text-muted">Analyze keyword usage</p>
+                            <a href="#" class="btn btn-outline-purple btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card seo-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-purple">
+                                <i class="fas fa-sitemap"></i>
+                            </div>
+                            <h5 class="card-title">Sitemap Generator</h5>
+                            <p class="card-text text-muted">Create XML sitemaps for websites</p>
+                            <a href="#" class="btn btn-outline-purple btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card seo-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-purple">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h5 class="card-title">Robots.txt Generator</h5>
+                            <p class="card-text text-muted">Create robots.txt files</p>
+                            <a href="#" class="btn btn-outline-purple btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card seo-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-purple">
+                                <i class="fab fa-google"></i>
+                            </div>
+                            <h5 class="card-title">Google Index Checker</h5>
+                            <p class="card-text text-muted">Check if pages are indexed</p>
+                            <a href="#" class="btn btn-outline-purple btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card seo-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-purple">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h5 class="card-title">Domain Authority Checker</h5>
+                            <p class="card-text text-muted">Check domain ranking metrics</p>
+                            <a href="#" class="btn btn-outline-purple btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card seo-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-purple">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            <h5 class="card-title">Backlink Checker</h5>
+                            <p class="card-text text-muted">Analyze backlinks to your site</p>
+                            <a href="#" class="btn btn-outline-purple btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card seo-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-purple">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <h5 class="card-title">Page Speed Checker</h5>
+                            <p class="card-text text-muted">Test website loading speed</p>
+                            <a href="#" class="btn btn-outline-purple btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card seo-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-purple">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h5 class="card-title">XML Sitemap Validator</h5>
+                            <p class="card-text text-muted">Validate your sitemap files</p>
+                            <a href="#" class="btn btn-outline-purple btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card seo-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-purple">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h5 class="card-title">Mobile Friendly Test</h5>
+                            <p class="card-text text-muted">Check mobile compatibility</p>
+                            <a href="#" class="btn btn-outline-purple btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="ad-space">
+            Advertisement Space - Leaderboard (728x90)
+        </div>
+        
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-exchange-alt"></i>
+                <h2>Unit Converters</h2>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-ruler"></i></div>
+                    <div class="tool-info">
+                        <h3>Length Converter</h3>
+                        <p>Convert between length units</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-weight"></i></div>
+                    <div class="tool-info">
+                        <h3>Weight Converter</h3>
+                        <p>Convert between weight units</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="tool-info">
+                        <h3>Speed Converter</h3>
+                        <p>Convert speed measurements</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-thermometer-half"></i></div>
+                    <div class="tool-info">
+                        <h3>Temperature Converter</h3>
+                        <p>Convert temperature units</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-flask"></i></div>
+                    <div class="tool-info">
+                        <h3>Volume Converter</h3>
+                        <p>Convert between volume units</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-database"></i></div>
+                    <div class="tool-info">
+                        <h3>Data Storage Converter</h3>
+                        <p>Convert data storage units</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-bolt"></i></div>
+                    <div class="tool-info">
+                        <h3>Energy Converter</h3>
+                        <p>Convert energy units</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="tool-info">
+                        <h3>Pressure Converter</h3>
+                        <p>Convert pressure units</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-calculator"></i></div>
+                    <div class="tool-info">
+                        <h3>Fuel Efficiency Converter</h3>
+                        <p>Convert fuel economy</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-angle-double-right"></i></div>
+                    <div class="tool-info">
+                        <h3>Angle Converter</h3>
+                        <p>Convert angle measurements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="container">
+        <div class="ad-space">
+            Advertisement Space - Banner (728x90)
+        </div>
+        
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-random"></i>
+                <h2>Miscellaneous Tools</h2>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-barcode"></i></div>
+                    <div class="tool-info">
+                        <h3>Barcode Generator</h3>
+                        <p>Create custom barcodes in seconds</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-grin-squint-tears"></i></div>
+                    <div class="tool-info">
+                        <h3>Meme Generator</h3>
+                        <p>Create hilarious memes instantly</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-file-alt"></i></div>
+                    <div class="tool-info">
+                        <h3>Resume Builder</h3>
+                        <p>Professional resume creator</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <div class="tool-info">
+                        <h3>Invoice Generator</h3>
+                        <p>Create professional invoices</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-signature"></i></div>
+                    <div class="tool-info">
+                        <h3>Business Name Generator</h3>
+                        <p>Find the perfect business name</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-lock"></i></div>
+                    <div class="tool-info">
+                        <h3>Lottery Number Generator</h3>
+                        <p>Generate lucky numbers</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-coins"></i></div>
+                    <div class="tool-info">
+                        <h3>Flip a Coin Simulator</h3>
+                        <p>Make decisions with a coin flip</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-dice"></i></div>
+                    <div class="tool-info">
+                        <h3>Random Number Generator</h3>
+                        <p>Generate random numbers</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-dice-five"></i></div>
+                    <div class="tool-info">
+                        <h3>Dice Roller Simulator</h3>
+                        <p>Roll virtual dice</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="tool-info">
+                        <h3>Internet Speed Test</h3>
+                        <p>Check your connection speed</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-calendar-alt"></i></div>
+                    <div class="tool-info">
+                        <h3>Daily Planner Creator</h3>
+                        <p>Organize your daily tasks</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-ring"></i></div>
+                    <div class="tool-info">
+                        <h3>Wedding Invitation Generator</h3>
+                        <p>Create beautiful invitations</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-book-open"></i></div>
+                    <div class="tool-info">
+                        <h3>Story Plot Generator</h3>
+                        <p>Get creative story ideas</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-book"></i></div>
+                    <div class="tool-info">
+                        <h3>E-book Creator</h3>
+                        <p>Convert content to e-books</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-robot"></i></div>
+                    <div class="tool-info">
+                        <h3>AI Chatbot</h3>
+                        <p>Interactive AI conversations</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="tool-info">
+                        <h3>IP Address Tracker</h3>
+                        <p>Locate any IP address</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-map-pin"></i></div>
+                    <div class="tool-info">
+                        <h3>Fake Address Generator</h3>
+                        <p>Generate realistic fake addresses</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-bolt"></i></div>
+                    <div class="tool-info">
+                        <h3>Electric Bill Calculator</h3>
+                        <p>Estimate your electricity costs</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-calendar-check"></i></div>
+                    <div class="tool-info">
+                        <h3>Leap Year Checker</h3>
+                        <p>Check if a year is a leap year</p>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-logo"><i class="fas fa-magic"></i></div>
+                    <div class="tool-info">
+                        <h3>Name to Numerology Calculator</h3>
+                        <p>Discover your name's numerology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Math & Calculators Section -->
+    <section id="math-tools" class="py-5">
+        <div class="container">
+            <h2 class="category-title">Math & Calculators</h2>
+            <div class="row g-4">
+                <!-- Calculator Cards -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card math-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-warning">
+                                <i class="fas fa-percentage"></i>
+                            </div>
+                            <h5 class="card-title">Percentage Calculator</h5>
+                            <p class="card-text text-muted">Calculate percentages easily</p>
+                            <a href="#" class="btn btn-outline-warning btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card math-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-warning">
+                                <i class="fas fa-birthday-cake"></i>
+                            </div>
+                            <h5 class="card-title">Age Calculator</h5>
+                            <p class="card-text text-muted">Calculate age from birth date</p>
+                            <a href="#" class="btn btn-outline-warning btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card math-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-warning">
+                                <i class="fas fa-weight"></i>
+                            </div>
+                            <h5 class="card-title">BMI Calculator</h5>
+                            <p class="card-text text-muted">Calculate Body Mass Index</p>
+                            <a href="#" class="btn btn-outline-warning btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card math-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-warning">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h5 class="card-title">BMR Calculator</h5>
+                            <p class="card-text text-muted">Calculate Basal Metabolic Rate</p>
+                            <a href="#" class="btn btn-outline-warning btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card math-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-warning">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <h5 class="card-title">Scientific Calculator</h5>
+                            <p class="card-text text-muted">Advanced math calculations</p>
+                            <a href="#" class="btn btn-outline-warning btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card math-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-warning">
+                                <i class="fas fa-tag"></i>
+                            </div>
+                            <h5 class="card-title">Discount Calculator</h5>
+                            <p class="card-text text-muted">Calculate discounts and savings</p>
+                            <a href="#" class="btn btn-outline-warning btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card math-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-warning">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <h5 class="card-title">Currency Converter</h5>
+                            <p class="card-text text-muted">Convert between currencies</p>
+                            <a href="#" class="btn btn-outline-warning btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card math-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-warning">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h5 class="card-title">Time Zone Converter</h5>
+                            <p class="card-text text-muted">Convert between time zones</p>
+                            <a href="#" class="btn btn-outline-warning btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card math-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-warning">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h5 class="card-title">Binary Converter</h5>
+                            <p class="card-text text-muted">Convert binary to decimal/hex</p>
+                            <a href="#" class="btn btn-outline-warning btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card math-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-warning">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h5 class="card-title">Tip Calculator</h5>
+                            <p class="card-text text-muted">Calculate restaurant tips</p>
+                            <a href="#" class="btn btn-outline-warning btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Space -->
+    <div class="container">
+        <div class="ad-space">
+            <p class="mb-0">Advertisement</p>
+            <!-- Ad code would go here -->
+        </div>
+    </div>
+
+    <!-- Social Media Tools Section -->
+    <section id="social-tools" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="category-title">Social Media Tools</h2>
+            <div class="row g-4">
+                <!-- Social Media Tool Cards -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card social-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-indigo">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <h5 class="card-title">YouTube Thumbnail Downloader</h5>
+                            <p class="card-text text-muted">Download YouTube video thumbnails</p>
+                            <a href="#" class="btn btn-outline-indigo btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card social-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-indigo">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <h5 class="card-title">Instagram Photo Downloader</h5>
+                            <p class="card-text text-muted">Download Instagram images</p>
+                            <a href="#" class="btn btn-outline-indigo btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card social-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-indigo">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <h5 class="card-title">Twitter Video Downloader</h5>
+                            <p class="card-text text-muted">Download videos from Twitter</p>
+                            <a href="#" class="btn btn-outline-indigo btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card social-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-indigo">
+                                <i class="fab fa-facebook"></i>
+                            </div>
+                            <h5 class="card-title">Facebook Video Downloader</h5>
+                            <p class="card-text text-muted">Download Facebook videos</p>
+                            <a href="#" class="btn btn-outline-indigo btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card social-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-indigo">
+                                <i class="fab fa-tiktok"></i>
+                            </div>
+                            <h5 class="card-title">TikTok Video Downloader</h5>
+                            <p class="card-text text-muted">Download TikTok videos</p>
+                            <a href="#" class="btn btn-outline-indigo btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card social-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-indigo">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                            <h5 class="card-title">YouTube Tags Extractor</h5>
+                            <p class="card-text text-muted">Extract tags from YouTube videos</p>
+                            <a href="#" class="btn btn-outline-indigo btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card social-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-indigo">
+                                <i class="fas fa-hashtag"></i>
+                            </div>
+                            <h5 class="card-title">Hashtag Generator</h5>
+                            <p class="card-text text-muted">Generate trending hashtags</p>
+                            <a href="#" class="btn btn-outline-indigo btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card social-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-indigo">
+                                <i class="fas fa-keyboard"></i>
+                            </div>
+                            <h5 class="card-title">Emoji Keyboard</h5>
+                            <p class="card-text text-muted">Copy and paste emojis</p>
+                            <a href="#" class="btn btn-outline-indigo btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="card tool-card social-tools h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="card-icon text-indigo">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <h5 class="card-title">Twitter Character Count</h5>
+                            <p class="card-text text-muted">Count characters for tweets</p>
+                            <a href="#" class="btn btn-outline-indigo btn-sm">Use Tool</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Transform Your Files?</h2>
+            <p class="lead mb-4">Join millions of users who trust our tools for their document needs</p>
+            <a href="#" class="btn btn-light btn-lg px-4 me-2">Get Started for Free</a>
+            <a href="#" class="btn btn-outline-light btn-lg px-4">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">I LOVEDD PDF</h5>
+                    <p>Your all-in-one solution for PDF, image, text and file conversion needs. Fast, secure and easy to use online tools.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="#pdf-tools">PDF Tools</a></li>
+                        <li class="mb-2"><a href="#image-tools">Image Tools</a></li>
+                        <li class="mb-2"><a href="#text-tools">Text Tools</a></li>
+                        <li class="mb-2"><a href="#seo-tools">SEO Tools</a></li>
+                        <li class="mb-2"><a href="#math-tools">Calculators</a></li>
+                        <li class="mb-2"><a href="#social-tools">Social Media</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Company</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="#">About Us</a></li>
+                        <li class="mb-2"><a href="#">Blog</a></li>
+                        <li class="mb-2"><a href="#">Careers</a></li>
+                        <li class="mb-2"><a href="#">Press</a></li>
+                        <li class="mb-2"><a href="#">Affiliates</a></li>
+                        <li class="mb-2"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Legal</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2"><a href="#">Terms of Service</a></li>
+                        <li class="mb-2"><a href="#">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#">Cookie Policy</a></li>
+                        <li class="mb-2"><a href="#">GDPR</a></li>
+                        <li class="mb-2"><a href="#">DMCA</a></li>
+                        <li class="mb-2"><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-light">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 I LOVEDD PDF. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Made with <i class="fas fa-heart text-danger"></i> for the digital world</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // This would be where you add dynamic functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tool card hover effects
+            const toolCards = document.querySelectorAll('.tool-card');
+            toolCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.boxShadow = '0 15px 30px rgba(0, 0, 0, 0.1)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = '';
+                    this.style.boxShadow = '';
+                });
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+  </html>
